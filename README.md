@@ -1,6 +1,13 @@
 # Project Anmicius
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![GitHub](https://img.shields.io/badge/GitHub-Jingshiro-blue)](https://github.com/Jingshiro/ProjectAnmicius)
+
 Project Anmicius 是一款基于 Python 开发的智能桌面伴侣应用程序。该项目旨在提供一个高度可定制的虚拟助手，集成 AI 对话、健康管理及桌面交互功能。
+
+> **⚠️ 许可声明**  
+> 本项目采用 **CC BY-NC-SA 4.0** 协议，**禁止商业使用**（包括二改版本）。  
+> 任何二次分发或修改请通过邮件告知作者：jingbaichuan1@gmail.com
 
 ---
 
@@ -192,12 +199,18 @@ build.bat
 核心条款：
 
 - **署名 (Attribution)**：使用本项目时需注明原作者信息
-- **非商业性使用 (NonCommercial)**：禁止将本项目用于任何商业目的
-- **相同方式共享 (ShareAlike)**：修改后的作品需采用相同许可协议
+- **非商业性使用 (NonCommercial)**：禁止将本项目（包括原版和任何修改版本）用于任何商业目的，包括但不限于：
+  - 销售本软件或其修改版本
+  - 将本软件集成到商业产品中
+  - 通过本软件直接或间接获取经济利益
+- **相同方式共享 (ShareAlike)**：修改后的作品必须采用相同许可协议（CC BY-NC-SA 4.0）
 
 #### 附加条款
 
-- **二次分发与修改需告知**：任何形式的二次分发（转载、打包）或二次修改（Fork、改编），请通过邮件告知原作者。
+- **二次分发与修改需告知**：任何形式的二次分发（转载、打包、分享）或二次修改（Fork、改编、衍生创作），必须通过邮件告知原作者：
+  - 邮箱：jingbaichuan1@gmail.com
+  - 请说明您的项目名称、修改内容和联系方式
+- **商业使用申请**：如需商业使用，必须事先获得原作者的书面许可
 
 ### 贡献指南
 
