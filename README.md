@@ -54,6 +54,8 @@ Project Anmicius 在桌面运行一个虚拟角色，该角色具备自然语言
 
 运行安装目录下的 `ProjectAnmicius.exe` 或 `run.bat`。
 
+[开袋即食版](https://github.com/Jingshiro/Project-Anmicius/releases/download/v1.0/ProjectAnmicius.exe)
+
 #### 初始配置
 
 首次启动后，右键点击桌面角色图标，选择"设置"。
@@ -115,7 +117,8 @@ Project Anmicius/
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/Jingshiro/ProjectAnmicius.git
+git clone https://github.com/Jingshiro/Project-Anmicius
+.git
 cd ProjectAnmicius
 
 # 2. 安装依赖
