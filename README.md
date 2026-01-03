@@ -126,7 +126,7 @@ Project Anmicius/
 # 1. 克隆项目
 git clone https://github.com/Jingshiro/Project-Anmicius
 .git
-cd ProjectAnmicius
+cd Project-Anmicius
 
 # 2. 安装依赖
 pip install -r requirements.txt
