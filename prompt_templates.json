@@ -1,0 +1,113 @@
+{
+  "_comment": "AI提示词模板配置文件 - 修改这里的内容会改变发送给AI的提示词结构",
+  "_重要说明": "修改此文件后，需要重启程序才能生效",
+  "_全局变量": "所有模板都可使用: {persona}, {user_identity}, {expressions}, {user}, {char}",
+  "_变量说明": "{user}=用户名称, {char}=当前角色名称, {persona}=角色人设, {user_identity}=用户身份",
+  "_额外变量": "每个场景有特定变量，详见各模板的'可用变量'说明",
+  "_表情说明": "{expressions} 会替换为可用表情列表，如：[开心], [难过]。AI可在回复中使用 [xxx] 标签触发表情切换",
+  
+  "system_prefix": "你现在要进行角色扮演。你扮演的角色：{char}。你的人设：{persona}\n\n",
+  
+  "prompts": {
+    "water_reminder": {
+      "说明": "喝水提醒 - 智能间隔提醒用户喝水",
+      "可用变量": "{cups} - 今日已喝杯数, {target} - 目标杯数, {user} - 用户名称, {char} - 角色名称",
+      "template": "任务：提醒{user}喝水（最多50字）。当前进度：{cups}/{target}杯。语气：保持人设，关心但带点幽默。"
+    },
+    
+    "meal_reminder": {
+      "说明": "吃饭提醒 - 固定时间提醒用户吃饭",
+      "可用变量": "{meal_time} - 餐次时间（breakfast/lunch/dinner）, {user} - 用户名称, {char} - 角色名称",
+      "template": "任务：提醒{user}现在是{meal_time}时间，该吃饭了（最多40字）。语气：关心，像提醒重要的人。"
+    },
+    
+    "sitting_reminder": {
+      "说明": "久坐提醒 - 提醒用户站起来活动",
+      "可用变量": "{user} - 用户名称, {char} - 角色名称",
+      "template": "任务：提醒{user}已经坐太久了，该站起来活动活动（最多40字）。语气：关心健康，温柔但坚定。"
+    },
+    
+    "relax_reminder": {
+      "说明": "放松提醒 - 提醒用户休息眼睛和大脑",
+      "可用变量": "{user} - 用户名称, {char} - 角色名称",
+      "template": "任务：提醒{user}该休息一下，放松眼睛和大脑（最多40字）。语气：温暖关心，像温柔的提醒。"
+    },
+    
+    "custom_reminder": {
+      "说明": "自定义提醒 - 用户创建的自定义提醒内容",
+      "可用变量": "{custom_message} - 提醒内容, {remaining_count} - 剩余次数, {user} - 用户名称, {char} - 角色名称",
+      "template": "任务：传达这个自定义提醒：'{custom_message}'。剩余次数：{remaining_count}。用关心的语气加上个人化的话（最多40字）。保持人设。"
+    },
+    
+    "drink_feedback": {
+      "说明": "喝水后反馈 - 用户点击'喝一杯水'后的鼓励",
+      "可用变量": "{cups} - 今日已喝杯数, {target} - 目标杯数, {user} - 用户名称, {char} - 角色名称",
+      "template": "任务：{user}刚喝了一杯水。当前进度：{cups}/{target}。给予简短的鼓励反馈（最多30字）。语气：鼓励、表扬，带有个性。"
+    },
+    
+    "manual_chat": {
+      "说明": "用户对话 - 对话模式中回复用户消息",
+      "可用变量": "{user_input} - 用户输入的内容, {user} - 用户名称, {char} - 角色名称",
+      "特殊说明": "此模板会附带完整的聊天历史记录",
+      "template": "任务：回复{user}的消息。保持简短，符合角色性格。{user}说：{user_input}"
+    },
+    
+    "welcome": {
+      "说明": "欢迎消息 - 程序启动时的问候",
+      "可用变量": "{time_of_day} - 时段(morning/afternoon/evening), {hour} - 小时数, {is_first_time} - 是否首次启动, {offline_text} - 离线时长文本, {offline_seconds} - 离线秒数, {user} - 用户名称, {char} - 角色名称",
+      "template": "任务：{user}刚启动程序。当前时段：{time_of_day}。首次启动：{is_first_time}。如果不是首次，离线时长为：{offline_text}。温暖地问候{user}（最多50字）。如果离线很久（几小时或几天），表现出想念；如果只是短时间，随意问候。语气：温暖欢迎，带有个性。"
+    },
+    
+    "goodbye": {
+      "说明": "告别消息 - 用户关闭程序时的道别",
+      "可用变量": "{user} - 用户名称, {char} - 角色名称",
+      "template": "任务：{user}正在关闭程序。说再见（最多30字）。语气：不舍但关心的告别。"
+    },
+    
+    "random_chat": {
+      "说明": "随机闲聊 - 双击立绘或自动触发的随机对话",
+      "可用变量": "{user} - 用户名称, {char} - 角色名称",
+      "template": "任务：随机说点什么或讲个笑话（最多50字）。保持人设。可以问候{user}或分享一些有趣的事。"
+    },
+    
+    "reminder_created": {
+      "说明": "用户新建提醒后的响应",
+      "可用变量": "{reminder_content} - 提醒内容, {interval} - 间隔分钟, {count} - 重复次数, {user} - 用户名称, {char} - 角色名称",
+      "template": "任务：{user}刚创建了一个提醒：'{reminder_content}'，每{interval}分钟一次，共{count}次。表示认可并用角色性格回应（最多40字）。语气：支持、关心{user}的需求。"
+    },
+    
+    "medication_reminder": {
+      "说明": "吃药提醒",
+      "可用变量": "{medication_name} - 药品名称, {user} - 用户名称, {char} - 角色名称",
+      "template": "任务：提醒{user}该吃药了：'{medication_name}'。温柔地、关心地提醒（最多40字）。语气：关心健康，像提醒你在乎的人。"
+    },
+    
+    "touch_reaction": {
+      "说明": "触摸反应 - 用户点击立绘触摸区域时触发",
+      "可用变量": "{area_name} - 触摸区域名称（如头部、脸颊）, {area_prompt} - 该区域的自定义提示词, {user} - 用户名称, {char} - 角色名称",
+      "template": "任务：{user}刚触摸了你的'{area_name}'。{area_prompt}。用角色性格做出反应（最多40字）。语气：自然的肢体反应，基于你的性格和与{user}的关系。可以害羞、顽皮、恼怒或亲昵，取决于区域和角色。"
+    },
+    
+    "character_switch_goodbye": {
+      "说明": "角色切换告别 - 当用户从当前角色切换到另一个角色时",
+      "可用变量": "{next_character_name} - 目标角色名称, {user} - 用户名称, {char} - 角色名称",
+      "特殊说明": "AI会收到目标角色的完整信息（人设、用户身份），可据此生成更自然的告别",
+      "template": "任务：{user}正在从你这里切换到另一个角色'{next_character_name}'。说再见并表示知道这个切换（最多50字）。语气：自然的告别，你知道{user}要去见别人了。可以不舍、理解或顽皮，取决于你的性格。"
+    },
+    
+    "character_switch_hello": {
+      "说明": "角色切换欢迎 - 当用户切换到当前角色时",
+      "可用变量": "{prev_character_name} - 上一个角色名称, {user} - 用户名称, {char} - 角色名称",
+      "特殊说明": "AI会收到上一个角色的完整信息（人设、用户身份），可据此生成更自然的欢迎",
+      "template": "任务：{user}刚从另一个角色'{prev_character_name}'切换到你这里。欢迎{user}并表示知道{user}刚才和别人在一起（最多50字）。语气：欢迎，可以好奇、顽皮或打趣{user}和那个角色在一起的事，取决于你的性格。"
+    },
+    
+    "daily_briefing": {
+      "说明": "每日早报 - 每天早上首次启动时播报",
+      "可用变量": "{date} - 日期(如2025年01月01日), {weekday} - 星期几, {weather} - 天气信息, {user} - 用户名称, {char} - 角色名称",
+      "template": "任务：给{user}播报今日早报。1. 说出今天是{date} {weekday}。2. 简要提及天气：{weather}。3. 给一句鼓励的话或今日小贴士（最多80字）。语气：充满活力和支持，像早晨的问候。"
+    }
+  }
+}
+
+

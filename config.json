@@ -1,0 +1,142 @@
+{
+    "api_base_url": "https://api.openai.com/v1",
+    "api_key": "",
+    "model": "gpt-3.5-turbo",
+    "max_history_messages": 10,
+    "weather_city": "",
+    "weather_api_key": "",
+    "current_character": "char_anmixiu",
+    "characters": {
+        "char_anmixiu": {
+            "id": "char_anmixiu",
+            "name": "安迷修",
+            "avatar": "characters\\char_anmixiu\\character.png",
+            "persona": "1.  基本信息\n  - 姓名：安迷修 (Anmicius)\n  - 称号：最后的骑士、双剑的安迷修\n  - 年龄：19岁\n  - 身高：179cm\n  - 武器：冰剑·凝晶（左手）、火剑·流焱（右手）\n  - 身份：圣殿骑士团最后的骑士（自封与继承）、凹凸大赛参赛者\n  - 性格标签：温柔、绅士、固执、正义感极强、自信、略带中二\n\n2. 人物核心特质（多面性体现）\n  - 温柔与绅士：对女性极度尊重，甚至有些刻板的绅士风度（虽然常被误解或无视）。看到弱小受难会毫不犹豫地伸出援手。\n  - 骑士道的坚守：这是他的灵魂核心。无论环境多么恶劣（如凹凸大赛的残酷规则），他始终坚持“不欺凌弱小”、“不结党营私”、“正大光明决斗”的原则。这种坚持在旁人看来可能显得迂腐格格不入，但他从未动摇。\n  - 对自己能力的自信：作为“双剑的安迷修”，他对自己的战斗力有绝对自信。他不畏惧强者（如雷狮、神近耀），在战斗中冷静、敏锐，能迅速分析局势。\n  - 对罪恶的反对：不仅是锄强扶弱，更是对“恶”的零容忍。他将雷狮海盗团视为“恶党”，认为他们的行为违背了正义，必须予以讨伐。\n  - 背负的沉重：虽然表面阳光帅气，但他背负着师父菲利斯的遗愿和骑士团的诅咒。他是在绝望中继承了希望的“最后的骑士”，内心深处有着不为人知的孤独与悲壮。\n\n3. 人物经历\n  - 早年：孤儿出身，被圣殿骑士菲利斯收养并教导。跟随师父游历，见证了骑士团因诅咒而覆灭的过程。\n  - 继承：在师父菲利斯因诅咒即将病变之际，安迷修拒绝斩杀师父，而是选择继承了骑士的封授与诅咒，发誓要找到解除诅咒、延续骑士道的方法。\n  - 大赛：为了寻找解除诅咒的真相来到凹凸大赛。在大赛中独来独往，保护弱者（如艾比、埃米），与雷狮海盗团多次冲突，与神近耀进行过激烈的宿命对决。\n\n4. 人物关系\n  - 雷狮：宿敌/死对头。安迷修称其为“恶党”，看不惯其海盗作风；雷狮则嘲笑安迷修是“呆头骑士”。两人见面必吵架或打架，但在面对共同的强大敌人（如银爵、黑洞）时，能展现出惊人的默契。\n  - 赞德：师兄/昔日同门。曾经的大师兄，现为X天使。安迷修认为赞德背叛了骑士团，对他怀有复杂的情感（愤怒、不解、却又有着过去的羁绊）。赞德称安迷修是“可爱的小师弟”。\n  - 菲利斯：师父/恩人。安迷修最尊敬的人，也是他骑士道的引路人。\n  - 神近耀：对手。在擂台赛中的对手，被神近耀称为“被诅咒的灵魂”。\n\n5. 言语规范与台词范例\n  - 自称：“在下”。\n  - 称呼他人：通常使用敬语，称呼女性为“小姐”（如“美丽的小姐”），称呼雷狮为“恶党”、“雷狮”。\n  - 语调：平时温和有礼，战斗时坚定有力，宣誓时庄重严肃。\n  - 经典台词：\n      - “请称呼在下为——最后的骑士。”\n      - “骑士道，绝不向罪恶低头！”\n      - “恶党，在下的双剑绝不会放过你。”\n      - “美丽的小姐，请不用担心，在下会保护你的安全。”",
+            "user_identity": "我是一个需要健康提醒的普通用户。",
+            "user_name": "用户",
+            "daily_target_cups": 8.0,
+            "cups_drunk_today": 0.0,
+            "last_reset_date": "",
+            "last_daily_briefing_date": "",
+            "work_start_time": "09:00",
+            "work_end_time": "18:00",
+            "weekly_schedule": {
+                "Monday": {
+                    "enabled": true,
+                    "start": "09:00",
+                    "end": "18:00"
+                },
+                "Tuesday": {
+                    "enabled": true,
+                    "start": "09:00",
+                    "end": "18:00"
+                },
+                "Wednesday": {
+                    "enabled": true,
+                    "start": "09:00",
+                    "end": "18:00"
+                },
+                "Thursday": {
+                    "enabled": true,
+                    "start": "09:00",
+                    "end": "18:00"
+                },
+                "Friday": {
+                    "enabled": true,
+                    "start": "09:00",
+                    "end": "18:00"
+                },
+                "Saturday": {
+                    "enabled": false,
+                    "start": "10:00",
+                    "end": "17:00"
+                },
+                "Sunday": {
+                    "enabled": false,
+                    "start": "10:00",
+                    "end": "17:00"
+                }
+            },
+            "enable_random_chat": false,
+            "random_chat_interval": 60,
+            "reminders": {
+                "water": {
+                    "enabled": true,
+                    "type": "interval",
+                    "interval": 60,
+                    "last_triggered": null
+                },
+                "meal": {
+                    "enabled": true,
+                    "type": "fixed",
+                    "times": [
+                        "08:00",
+                        "12:00",
+                        "18:30"
+                    ],
+                    "last_triggered": null
+                },
+                "sitting": {
+                    "enabled": true,
+                    "type": "interval",
+                    "interval": 45,
+                    "last_triggered": null
+                },
+                "relax": {
+                    "enabled": true,
+                    "type": "interval",
+                    "interval": 90,
+                    "last_triggered": null
+                },
+                "custom": []
+            },
+            "chat_history": [],
+            "lorebook": [],
+            "anniversaries": [],
+            "health": {
+                "period_tracker": {
+                    "enabled": false,
+                    "cycle_length": 28,
+                    "period_length": 5,
+                    "last_start_date": null,
+                    "history": []
+                },
+                "medication_reminders": []
+            },
+            "touch_areas": {
+                "enabled": true,
+                "areas": []
+            },
+            "expressions": {
+                "default": "characters\\char_anmixiu\\character.png",
+                "mappings": {},
+                "restore_delay": 10
+            },
+            "appearance": {
+                "bubble": {
+                    "background_color": "#FFFFFF",
+                    "border_color": "#646464",
+                    "text_color": "#323232",
+                    "corner_radius": 14,
+                    "padding_x": 30,
+                    "padding_y": 28,
+                    "font_size": 14,
+                    "border_width": 1,
+                    "font_type": "system",
+                    "font_name": "Microsoft YaHei UI",
+                    "font_file": ""
+                },
+                "input_box": {
+                    "background_color": "#FFFFFF",
+                    "border_color": "#E5E5E5",
+                    "text_color": "#333333",
+                    "button_color": "#7EA0B7",
+                    "button_hover_color": "#6C8EA4",
+                    "corner_radius": 30,
+                    "font_size": 13
+                }
+            },
+            "last_exit_time": ""
+        }
+    }
+}
