@@ -5,8 +5,8 @@
 
 Project Anmicius 是一款基于 Python 开发的智能桌面伴侣应用程序。该项目旨在提供一个高度可定制的虚拟助手，集成 AI 对话、健康管理及桌面交互功能。
 
-> **⚠️ 许可声明**  
-> 本项目采用 **CC BY-NC-SA 4.0** 协议，**禁止商业使用**（包括二改版本）。  
+> **⚠️ 许可声明**
+> 本项目采用 **CC BY-NC-SA 4.0** 协议，**禁止商业使用**（包括二改版本）。
 > 任何二次分发或修改请通过邮件告知作者：jingbaichuan1@gmail.com
 
 ---
@@ -216,7 +216,7 @@ build.bat
 
 本项目完全开源免费。欢迎通过以下方式参与：
 
-- 提交 Bug 报告或功能建议：[GitHub Issues](https://github.com/Jingshiro/ProjectAnmicius/issues)
+- 提交 Bug 报告或功能建议：[GitHub Issues](https://github.com/Jingshiro/Project-Anmicius/issues)
 - 贡献代码：提交 Pull Request 前请先通过 Issue 讨论
 - 技术交流：通过邮件或 GitHub Discussions 与开发者联系
 
